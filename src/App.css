@@ -1,7 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html,
 body {
@@ -21,11 +29,18 @@ body {
   width: 100%;
   min-height: 100%;
   background-color: #0C0C0C;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3%;
   gap: 30px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .todobox h1{
   font-size: 2rem;
@@ -48,11 +63,17 @@ button{
   color: #fff;
 }
 button:hover{
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .userInput{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 40%;
   height: auto;
 }
@@ -64,8 +85,12 @@ button:hover{
 }
 
 li{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
   list-style: none;
   text-transform: capitalize;
